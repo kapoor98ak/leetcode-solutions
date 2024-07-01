@@ -1,0 +1,10 @@
+class Solution:
+    def strStr(self, haystack: str, needle: str) -> int:
+        if(len(needle)>len(haystack) or (len(needle) == len(haystack) and needle != haystack)):
+            return -1
+        else:
+            return haystack.find(needle)
+
+
+# using the python's string equal operator and .find() function to solve it.
+        
