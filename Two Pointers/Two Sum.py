@@ -1,4 +1,4 @@
-def result(arr: list, target: int) -> int:
+def result(arr: list, target: int) -> list:
     left_ptr = 0
     right_ptr = len(arr)-1
     while(left_ptr <= right_ptr):
@@ -12,6 +12,6 @@ def result(arr: list, target: int) -> int:
     
     return list([])
 
-# print(result([1, 2, 3, 4, 6], 6))
+print(result([1, 2, 3, 4, 6], 6))
 print(result([2, 5, 9, 11], 11))
 
